@@ -1,4 +1,4 @@
-
+setwd("C:/R/programs/project_packages/data")
 df <- read.delim("input.txt")
 m <- data.matrix(df)
 
@@ -83,7 +83,7 @@ for (i in 1:n) {
 #     main = 'points x-z', xlab = "x", ylab = "z")
 
 #вывод полученных данных в виде таблиц
-setwd("C:/R/programs")
+#setwd("C:/R/programs/project_packages/output_data")
 df1 <- as.data.frame(t(vectors))
 write.csv(t(df1), file = "VectorsData.csv", row.names = FALSE)
 df2 <- as.data.frame(number_of_classes_each_dimension)

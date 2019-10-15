@@ -1,0 +1,19 @@
+Формат входных данных:
+файл input.txt 
+	второе число - размерность пространства, второе число - количество точек.
+
+Формат выходных данных:
+файл VectorsData.csv
+	строки - точки
+	столбцы - соответственно координаты точки
+файл dimensions.csv
+	вектор, содержащий количство групп соотвественно на каждое измерение
+
+
+Чтобы получить данные:
+
+setwd("locationoffiles") #они должны лежать в одной директории
+df1 <- read.csv("VectorsData.csv")
+df2 <- read.csv("dimensions.csv")
+points <- as.matrix(df1)
+number_of_classes_each_dimension <- as.matrix(df2)
