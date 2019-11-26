@@ -31,6 +31,7 @@ for (i in 1:vector_dimension){
   if (number_of_classes_each_dimension[i] == 1){
     x = points[,i]
     border_points[[i]] = c(min(unlist(density(x)[1])), max(unlist(density(x)[1])))
+    plot(density(x), col = 'red')
   }
   
   #если два класса
